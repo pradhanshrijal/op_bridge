@@ -20,7 +20,7 @@ export AGENT_ROLE_NAME="hero"
 export OP_BRIDGE_MODE="free" 
 
 # CARLA town name or custom OpenDRIVE absolute path, when BRIDGE_MODE is free 
-export FREE_MAP_NAME="Town03" 
+export FREE_MAP_NAME="Town01" 
 
 # Spawn point for the autonomous agent, when BRIDGE_MODE is free 
 # "x,y,z,roll,pitch,yaw"

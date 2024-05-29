@@ -213,7 +213,7 @@ class Ros2Agent(AutonomousAgent):
         team_code_path = os.environ['OP_AGENT_ROOT']
         if not team_code_path or not os.path.exists(team_code_path):
             raise IOError("Path '{}' defined by OP_AGENT_ROOT invalid".format(team_code_path))
-        opendrive_map_path = "{}/hdmaps/{}.xodr".format(team_code_path, map_name)        
+        opendrive_map_path = "{}/autoware-contents/maps/vector_maps/{}.xodr".format(team_code_path, map_name)        
 
         f = open(opendrive_map_path, "w")
         f.write(map_data)
