@@ -41,7 +41,7 @@ class AgentLoop(object):
         self.running = False
         self.timestamp_last_run = 0.0
         self.timeout = 20.0
-        self.role_name = 'hero'
+        self.role_name = os.environ['AGENT_ROLE_NAME']
         watchdog_timeout = max(5, self.timeout - 2)        
         agent_timeout = watchdog_timeout - 1
         self._agent_watchdog = Watchdog(agent_timeout)
