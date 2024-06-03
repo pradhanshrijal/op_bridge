@@ -1,7 +1,10 @@
 #!/bin/bash
 
-SOURCE_FILE=$1
-SOURCE_FILE="${SOURCE_FILE:=${OP_BRIDGE_ROOT}/pha_scripts/modular_exploration/export_exploration_vars.sh}"
+OP_ENVS=$1
+CWR_ENVS=$2
+
+OP_ENVS="${OP_ENVS:=${OP_BRIDGE_ROOT}/pha_scripts/export_exploration_envs.sh}"
+CWR_ENVS="${CWR_ENVS:=${OP_BRIDGE_ROOT}/pha_scripts/export_carlaware_envs.sh}"
 
 #############################
 # Map exploration Mode
@@ -9,7 +12,8 @@ SOURCE_FILE="${SOURCE_FILE:=${OP_BRIDGE_ROOT}/pha_scripts/modular_exploration/ex
 # No scenario required, the ego vehicle should explore the scene 
 #############################
 
-source ${SOURCE_FILE}
+source ${OP_ENVS}
+source ${CWR_ENVS}
 
 source /opt/ros/humble/setup.bash 
 source ${AUTOWARE_ROOT}/install/setup.bash
