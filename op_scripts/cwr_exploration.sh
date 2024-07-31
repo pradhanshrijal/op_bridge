@@ -7,7 +7,7 @@
 export SIMULATOR_LOCAL_HOST="localhost"
 #export SIMULATOR_LOCAL_HOST="192.168.11.5"
 export SIMULATOR_PORT="2000"
-export TEAM_AGENT=${OP_BRIDGE_ROOT}/op_bridge/op_ros2_agent.py
+export TEAM_AGENT=${OP_BRIDGE_ROOT}/op_bridge/op_ros2_agent_full.py
 export PYTHONPATH="${CARLA_ROOT}/PythonAPI/carla/":"${SCENARIO_RUNNER_ROOT}":"${OP_BRIDGE_ROOT}":${PYTHONPATH}
 export AGENT_FRAME_RATE="20"
 # Autonomous actor default role_name
